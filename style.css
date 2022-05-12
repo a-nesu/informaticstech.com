@@ -1,0 +1,473 @@
+/** Universal **/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(white,lightgrey);
+    position:relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/** ======Navigation ======**/
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+}
+.navbar ul li {
+    list-style-type: none;
+
+}
+
+ .navbar ul li  a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+
+.navbar ul li  a:hover{
+    color: white;
+    background-color: orangered;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+
+#login-btn{
+    height: 42px;
+    width: 80px;
+    background-color: orangered;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+}
+
+#login-btn:hover{
+    animation-name: searchbtn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+/** ====== Hero ======**/
+.hero{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+justify-content: center;
+height: 600px;
+text-align: center;
+border-radius: 5px;
+animation-name: pictures;
+background: url(portfolio/portfolio-8.jpg);
+animation-duration: 30s;
+animation-iteration-count: infinite;
+width: 100%;
+
+}
+.hero p{
+    font-size: large;
+}
+
+@keyframes pictures{
+    0%{
+        background-image: url(portfolio/portfolio-2.jpg);
+    
+
+    }
+    20%{
+        background-image: url(portfolio/portfolio-6.jpg);
+        
+
+    }
+    40%{
+        background-image: url(portfolio/portfolio-5.jpg);
+    
+
+    }
+    60%{
+        background-image: url(portfolio/portfolio-9.jpg);
+        
+
+    }
+
+    80%{
+        background-image: url(portfolio/city.jpg);
+    
+
+
+    }
+    100%{
+        background-image: url(portfolio/portfolio-details-2.jpg);
+    
+
+
+    }
+    
+}
+
+@keyframes searchbtn{
+    100%{
+        color: black;
+        background-color: white;
+    }
+}
+
+.container-fluid{
+    height: 600px;
+    display: inline-flex;
+    width: 100%;
+    grid-gap: 1px;
+    
+}
+.grid-item1 , .grid-item2{
+    grid-gap: 20px;
+    width: 50%;
+    height: auto;
+
+justify-content: center;
+text-align: center;
+border-radius: 8px;
+}
+.grid-item2{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.grid-item1{
+    color:black;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+
+
+}
+
+#select-btn, #Read-btn{
+    height: 35px;
+    width: 100px;
+    background-color: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left:100px;
+    transition: all 0.5s;
+}
+#select-btn:hover, #Read-btn:hover{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+/** ====== Services ======**/
+
+.box-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    min-height: 300px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 5px;
+    grid-gap: 40px;
+    margin-left: 35px;
+    justify-content: center;
+background-color: white;
+    transition: all 0.5s;
+
+}
+.item1, .item2 ,  .item3 , .item4{
+    height: auto;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid orangered;
+    align-items: center;
+
+    
+}
+.item4{
+    width: 20%;
+}
+.item1:hover, .item2:hover,  .item3:hover, .item4:hover{
+    animation-name: hero;
+    background: linear-gradient(180deg,white,orangered);
+    transition: all 0.5s;
+    width: 20.2%;
+    margin-bottom: 10px;
+
+
+}
+@keyframes hero{
+    100%{
+background-color: white;
+
+    }
+}
+.box-container p{
+    font-size: large;
+}
+/** ====== Sign up to our news letter ======**/
+
+
+
+.search{
+    font-size: 40px;
+    border-radius: 5px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search p{
+    font-size: large;
+}
+ .search #search-input{
+    height: 42px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+.search #btn-search{
+    height: 40px;
+    width: 80px;
+    background-color: orangered;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px
+}
+
+
+/** Footer-1 **/
+
+.bottom-footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    grid-gap: 10px;
+}
+
+.bottom-footer a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orangered;
+
+}
+
+.bottom-footer a:hover{
+    color: blue;
+
+}
+
+.footer-1, .footer-2 ,  .footer-3 , .footer-4{
+    width: 25%;
+    justify-content: center;
+}
+.footer-modification{
+    justify-content: center;
+    line-height: 20px;
+}
+
+
+.copy-rights{
+    height:40px;
+    width:auto;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/** section**/
+.section{
+    height: 100px;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    height: 300px;
+    width: auto;
+    display: flex;
+    border-radius: 5px;
+    background-image: url(portfolio/portfolio-2.jpg);
+}
+
+.middle{
+    height: 200px;
+    width: 100%;
+    background:linear-gradient(180deg,white,blue,skyblue);
+}
+.responses{
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+.response{
+    display: flex;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    border: 1px solid rgb(212, 26, 26);
+    flex-shrink: 20px;
+    display: inline;
+    word-spacing: 20px;
+    border-radius: 10px;
+
+}
+.response:hover{
+    transform:calc(2)
+
+}
+.response img{
+    height:350px;
+    width:600px;
+    border-radius: 10px;
+
+}
+.response p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+}
+
+.responses .response p{
+    display: inline;
+    
+    
+}
+.response p a{
+    word-spacing: 20px;
+}
+#register{
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+#legend{
+    border: 2px solid black;
+}
+#user-form{
+    line-height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 80px;
+}
+#first_name, #last_name, #user_email, #user_comment{
+    height: 40px;
+    width: 400px;
+    border-radius: 6px;
+    text-align: center;
+
+}
+#register-btn{
+    height: 40px;
+    width: 80px;
+    background-color: orangered;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px
+}
+
+#register-btn:hover{
+    color: black;
+    font-weight: bold;
+    animation-name: register;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes register{
+    0%{
+        background-color: white;
+        color: black;
+    }
+    10%{
+        background-color: white;
+        color: black;
+    }
+    20%{
+        background-color: white;
+        color: black;
+    }
+    30%{
+        background-color: white;
+        color: black;
+    }
+    40%{
+        background-color: white;
+        color: black;
+    }
+    50%{
+        background-color: white;
+        color: black;
+    }
+    60%{
+        background-color: white;
+        color: black;
+    }
+    70%{
+        background-color: white;
+        color: black;
+    }
+    80%{
+        background-color: white;
+        color: black;
+    }
+    90%{
+        background-color: white;
+        color: black;
+    }
+
+    100%{
+        background-color: white;
+        color: black;
+
+    }
+}
